@@ -4,9 +4,14 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!-- 使用Annotation时不需要xml来配置 -->
+    <!--
+
     <bean id="userService" class="com.winchang.learn.service.UserService">
         <property name="mailService" ref="mailService" />
     </bean>
 
     <bean id="mailService" class="com.winchang.learn.service.MailService" />
+
+    -->
 </beans>

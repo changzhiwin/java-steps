@@ -2,10 +2,15 @@ package com.winchang.learn.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.winchang.learn.model.User;
 
+@Component()
 public class UserService {
+
+  @Autowired  
   private MailService mailService;
 
   public void setMailService(MailService mailService) {
